@@ -1,7 +1,6 @@
 // Copyright 2018 Your Name <your_email>
 
 #include <header.hpp>
-#include <header.hpp>
 #include <boost/beast.hpp>
 #include <boost/asio.hpp>
 #include <boost/asio/ssl.hpp>
