@@ -224,21 +224,39 @@ struct downloader {
         }
     }
 };
+// 
 static std::vector <std::string> str;
-int main() {
-    struct link first("https://horo.mail.ru/");
-    struct link second("https://codbit.wordpress.com/");
-    downloader d1;
-    std::thread t1(&downloader::crawl, d1, first, 1);
-    std::thread t2(&downloader::crawl, d1, second, 1);
-    t2.join();
-    t1.join();
-    std::cout << pages.size() << std::endl;
-    std::cout << "Now links on pics" << std::endl;
-    d1.myfunc();
-    while (!pics_queue.empty()) {
-        std::cout << pics_queue.front() << std::endl;
-        pics_queue.pop();
-    }
-    return 0;
-}
+
+// int main() {
+
+//     struct link first("https://horo.mail.ru/");
+
+//     struct link second("https://codbit.wordpress.com/");
+
+//     downloader d1;
+
+//     std::thread t1(&downloader::crawl, d1, first, 1);
+
+//     std::thread t2(&downloader::crawl, d1, second, 1);
+
+//     t2.join();
+
+//     t1.join();
+
+//     std::cout << pages.size() << std::endl;
+
+//     std::cout << "Now links on pics" << std::endl;
+
+//     d1.myfunc();
+
+//     while (!pics_queue.empty()) {
+
+//         std::cout << pics_queue.front() << std::endl;
+
+//         pics_queue.pop();
+
+//     }
+
+//     return 0;
+
+// }
