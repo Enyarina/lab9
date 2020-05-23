@@ -224,7 +224,6 @@ struct downloader {
         }
     }
 };
-// 
 static std::vector <std::string> str;
 
 // int main() {
